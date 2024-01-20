@@ -7,6 +7,8 @@ body {
     font-weight: 700;
     font-size: 18px;
     color: #fff;
+
+    background-color: #8d6666;
 }
 
 h1 {
@@ -17,7 +19,10 @@ h1 {
     line-height: 1.08;
     text-transform: uppercase;
 }
-
+h3 {
+    font-size: 42px;
+    line-height: 1.19;
+}
 h4 {
     font-size: 26px;
     line-height: 1.55;
@@ -33,4 +38,10 @@ a {
     line-height: 1.5;
     background-color: $mainRed;
     border-radius: 211px;
+    &_hero {
+        padding: 26px 64px;
+    }
+    &_articles {
+        padding: 16px 40px;
+    }
 }
