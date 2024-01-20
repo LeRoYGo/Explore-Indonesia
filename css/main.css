@@ -1,0 +1,176 @@
+@charset "UTF-8";
+/* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.hero {
+  background-image: url("./../../img/Hero/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-left: 32px;
+  max-width: 1915px;
+  margin: 0 auto;
+  height: 100vh;
+  justify-content: start;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 277px 1fr 417px;
+  grid-template-rows: 105px 1fr 254px;
+  grid-template-areas: "logo nav buttons" "scroll сontent сontent" "social card video";
+}
+.hero__logo {
+  grid-area: logo;
+}
+.hero__nav {
+  grid-area: nav;
+}
+.hero__buttons {
+  grid-area: buttons;
+  justify-self: center;
+  align-self: center;
+}
+.hero__scroll {
+  grid-area: scroll;
+}
+.hero__сontent {
+  grid-area: сontent;
+}
+.hero__social {
+  grid-area: social;
+}
+.hero__card {
+  grid-area: card;
+}
+.hero__video {
+  grid-area: video;
+}
+
+.nav__list {
+  display: flex;
+  text-transform: uppercase;
+}
+.nav__item + .nav__item {
+  margin-left: 62px;
+}
+.nav__link {
+  color: #fff;
+}
+
+.header-buttons__item + .header-buttons__item {
+  margin-left: 44px;
+}

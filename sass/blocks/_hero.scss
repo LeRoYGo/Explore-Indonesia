@@ -1,0 +1,71 @@
+body {
+    background-color: #ffffff;
+}
+.hero {
+    background-image: url("./../../img/Hero/hero-background.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    padding-left: 32px;
+    max-width: 1915px;
+    margin: 0 auto;
+    height: 100vh;
+    justify-content: start;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: 277px 1fr 417px;
+    grid-template-rows: 105px 1fr 254px;
+    grid-template-areas:
+        "logo nav buttons"
+        "scroll сontent сontent"
+        "social card video";
+
+    &__logo {
+        grid-area: logo;
+    }
+    &__nav {
+        grid-area: nav;
+    }
+    &__buttons {
+        grid-area: buttons;
+        justify-self: center;
+        align-self: center;
+    }
+    &__scroll {
+        grid-area: scroll;
+    }
+    &__сontent {
+        grid-area: сontent;
+    }
+    &__social {
+        grid-area: social;
+    }
+    &__card {
+        grid-area: card;
+    }
+    &__video {
+        grid-area: video;
+    }
+}
+.nav {
+    &__list {
+        display: flex;
+        text-transform: uppercase;
+    }
+    &__item {
+        & + & {
+            margin-left: 62px;
+        }
+    }
+    &__link {
+        color: #fff;
+    }
+}
+.header-buttons {
+    &__item {
+        & + & {
+            margin-left: 44px;
+        }
+    }
+}
