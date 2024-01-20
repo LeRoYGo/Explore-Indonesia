@@ -142,7 +142,6 @@ body {
 .hero__buttons {
   grid-area: buttons;
   justify-self: center;
-  align-self: center;
 }
 .hero__scroll {
   grid-area: scroll;
