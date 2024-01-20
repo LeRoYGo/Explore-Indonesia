@@ -14,8 +14,8 @@ body {
     align-items: center;
 
     display: grid;
-    grid-template-columns: 277px 1fr 417px;
-    grid-template-rows: 105px 1fr 254px;
+    grid-template-columns: minmax(auto, 277px) 1fr minmax(auto, 417px);
+    grid-template-rows: minmax(auto, 105px) 1fr minmax(auto, 254px);
     grid-template-areas:
         "logo nav buttons"
         "scroll сontent сontent"
