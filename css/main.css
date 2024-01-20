@@ -119,7 +119,7 @@ body {
 }
 
 .hero {
-  background-image: url("./../../img/Hero/hero-background.jpg");
+  background-image: url("../img/Hero/hero-background.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   padding-left: 32px;
