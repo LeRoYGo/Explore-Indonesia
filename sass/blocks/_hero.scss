@@ -12,8 +12,8 @@
     align-items: center;
 
     display: grid;
-    grid-template-columns: minmax(auto, 277px) 1fr minmax(auto, 417px);
-    grid-template-rows: minmax(auto, 105px) 1fr minmax(auto, 254px);
+    grid-template-columns: minmax(auto, 277px) auto minmax(auto, 417px);
+    grid-template-rows: minmax(auto, 105px) auto minmax(auto, 254px);
     grid-template-areas:
         "logo nav buttons"
         "scroll сontent сontent"
