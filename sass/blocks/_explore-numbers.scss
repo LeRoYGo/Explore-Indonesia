@@ -22,6 +22,7 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(auto, 340px));
     justify-items: center;
+    justify-content: center;
     gap: 50px 30px;
     padding: 200px 15px;
     margin-top: 890px;
