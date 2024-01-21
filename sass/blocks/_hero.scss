@@ -1,10 +1,8 @@
-body {
-    background-color: #ffffff;
-}
 .hero {
     background-image: url("../img/Hero/hero-background.jpg");
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: cover;
 
     padding-left: 32px;
     max-width: 1915px;
@@ -14,8 +12,8 @@ body {
     align-items: center;
 
     display: grid;
-    grid-template-columns: minmax(auto, 277px) 1fr minmax(auto, 417px);
-    grid-template-rows: minmax(auto, 105px) 1fr minmax(auto, 254px);
+    grid-template-columns: minmax(auto, 277px) auto minmax(auto, 417px);
+    grid-template-rows: minmax(auto, 105px) auto minmax(auto, 254px);
     grid-template-areas:
         "logo nav buttons"
         "scroll сontent сontent"
@@ -33,20 +31,24 @@ body {
     }
     &__scroll {
         grid-area: scroll;
+        align-self: stretch;
     }
     &__сontent {
         grid-area: сontent;
     }
     &__social {
         grid-area: social;
+        align-self: stretch;
     }
     &__card {
         grid-area: card;
+        align-self: end;
     }
     &__video {
         grid-area: video;
     }
 }
+
 .nav {
     &__list {
         display: flex;
@@ -57,14 +59,83 @@ body {
             margin-left: 62px;
         }
     }
-    &__link {
-        color: #fff;
-    }
 }
 .header-buttons {
     &__item {
         & + & {
             margin-left: 44px;
         }
+    }
+}
+.scroll {
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-right: auto;
+    height: 100%;
+    &__num {
+        text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+        margin-top: 20px;
+        writing-mode: vertical-rl;
+        transform: rotate(-180deg);
+    }
+    &__bar {
+        display: inline-block;
+        background: linear-gradient(0deg, #fff 0%, #fff 100%), #fff;
+        width: 2px;
+        height: 100%;
+        position: relative;
+        &::after {
+            content: "";
+            width: 4px;
+            height: 33%;
+            background: #dd2242;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.45);
+            position: absolute;
+            top: 0;
+            left: -1px;
+        }
+    }
+}
+
+.hero-сontent {
+    h1 {
+        margin-bottom: 21px;
+    }
+}
+
+.hero-social {
+    padding: 55px 30px;
+    &__list {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__item {
+        text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+        writing-mode: vertical-rl;
+        transform: rotate(-180deg);
+    }
+}
+
+.hero-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 90%;
+    &__item {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 41px 71px;
+    }
+    &__num {
+        display: block;
+        margin-bottom: 14px;
+        color: $mainRed;
+    }
+    &__desc {
+        color: #939393;
     }
 }

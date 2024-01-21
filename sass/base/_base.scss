@@ -6,4 +6,49 @@ body {
     font-family: "DM Sans", sans-serif;
     font-weight: 700;
     font-size: 18px;
+    color: #fff;
+
+    background-color: #575757;
+}
+
+h1 {
+    font-size: 120px;
+    font-family: "Roboto";
+    font-size: 120px;
+    font-weight: 900;
+    line-height: 1.08;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 42px;
+    line-height: 1.19;
+}
+h4 {
+    font-size: 26px;
+    line-height: 1.55;
+}
+a {
+    color: #fff;
+}
+
+[class$="__desc"] {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: $mainRed;
+    border-radius: 211px;
+    &_hero {
+        padding: 26px 64px;
+    }
+    &_articles {
+        padding: 16px 40px;
+    }
 }

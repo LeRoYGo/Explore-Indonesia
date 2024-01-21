@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/main.css" />
+        <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
         <title>Explore Indonesia</title>
     </head>
     <body>
@@ -27,11 +29,89 @@
                 <button class="header-buttons__item"><img src="./img/icons/search.svg" alt="search" /></button>
                 <button class="header-buttons__item"><img src="./img/icons/menu-burger.svg" alt="menu-burger" /></button>
             </div>
-            <div class="hero__scroll"></div>
-            <div class="hero__сontent"></div>
-            <div class="hero__social"></div>
-            <div class="hero__card"></div>
-            <div class="hero__video"></div>
+            <div class="hero__scroll scroll">
+                <span class="scroll__num">01</span>
+                <span class="scroll__bar"></span>
+            </div>
+            <div class="hero__сontent hero-сontent">
+                <h1 class="">explore<br />indonesia</h1>
+                <a class="button button_hero" href="#!">Start travelling</a>
+            </div>
+            <div class="hero__social hero-social">
+                <ul class="hero-social__list">
+                    <li class="hero-social__item"><a href="#!">Fb</a></li>
+                    <li class="hero-social__item"><a href="#!">In</a></li>
+                    <li class="hero-social__item"><a href="#!">Tw</a></li>
+                </ul>
+            </div>
+            <div class="hero__card hero-card">
+                <div class="hero-card__item">
+                    <span class="hero-card__num">01</span>
+                    <h4 class="hero-card__title">Title here</h4>
+                    <p class="hero-card__desc">Lorem ipsum dolor sit amet et amet ist ame.</p>
+                </div>
+                <div class="hero-card__item">
+                    <span class="hero-card__num">02</span>
+                    <h4 class="hero-card__title">Title here</h4>
+                    <p class="hero-card__desc">Lorem ipsum dolor sit amet et amet ist ame.</p>
+                </div>
+                <div class="hero-card__item">
+                    <span class="hero-card__num">03</span>
+                    <h4 class="hero-card__title">Title here</h4>
+                    <p class="hero-card__desc">Lorem ipsum dolor sit amet et amet ist ame.</p>
+                </div>
+            </div>
+            <div class="hero__video">
+                <img src="./img/Hero/video-poster.jpg" alt="" />
+            </div>
+        </section>
+        <section class="articles">
+            <div class="articles-сontainer">
+                <div class="articles__card articles-card">
+                    <div class="articles-card__img">
+                        <img src="./img/Articles/Walking-paths-Indonesia.jpg" alt="Walking paths Indonesia" />
+                    </div>
+                    <div class="articles-card-content">
+                        <h3 class="articles-card-content__title">The walkways of Indonesia spellbind</h3>
+                        <p class="articles-card-content__desc">Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus.</p>
+                        <a class="button button_articles" href="#!">Learn More</a>
+                    </div>
+                </div>
+                <div class="articles__card articles-card articles-card_reverse">
+                    <div class="articles-card__img articles-card__img_reverse">
+                        <img src="./img/Articles/beach.jpg" alt="beach" />
+                    </div>
+                    <div class="articles-card-content">
+                        <h3 class="articles-card-content__title">Perfect beaches exude relaxation and fun</h3>
+                        <p class="articles-card-content__desc">Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus.</p>
+                        <a class="button button_articles" href="#!">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="explore-numbers">
+            <h3 class="explore-numbers__title">Explore Our Secrets</h3>
+            <div class="explore-numbers__slider"></div>
+            <div class="explore-numbers-content-list">
+                <div class="explore-numbers-content-list__body">
+                    <h3 class="explore-numbers-content-list__title">By The Numbers</h3>
+                    <p class="explore-numbers-content-list__desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="explore-numbers-content-card">
+                    <span class="explore-numbers-content-card__number">100+</span>
+                    <p class="explore-numbers-content-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.</p>
+                </div>
+                <div class="explore-numbers-content-card">
+                    <span class="explore-numbers-content-card__number">43,000+</span>
+                    <p class="explore-numbers-content-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.</p>
+                </div>
+                <div class="explore-numbers-content-card">
+                    <span class="explore-numbers-content-card__number">30+</span>
+                    <p class="explore-numbers-content-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.</p>
+                </div>
+            </div>
         </section>
     </body>
 </html>
