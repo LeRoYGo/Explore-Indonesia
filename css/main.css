@@ -311,3 +311,48 @@ a {
   text-align: center;
   margin-bottom: 34px;
 }
+
+.video {
+  background-image: url("../img/Video/background.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 642px));
+  grid-template-rows: repeat(3, auto);
+  grid-column-gap: 75px;
+  grid-row-gap: 115px;
+  grid-template-areas: "title title" "video video";
+  justify-items: center;
+  justify-content: center;
+  padding: 141px 0 255px;
+}
+.video__title {
+  grid-area: title;
+  max-width: 1056px;
+  text-align: center;
+}
+.video__video {
+  grid-area: video;
+}
+
+.video-card {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "video title" "video desc";
+  grid-column-gap: 42px;
+  grid-row-gap: 31px;
+}
+.video-card__video {
+  grid-area: video;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.video-card__title {
+  grid-area: title;
+}
+.video-card__desc {
+  grid-area: desc;
+  opacity: 0.7;
+}
