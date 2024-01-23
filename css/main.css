@@ -5,7 +5,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   color: #fff;
-  background-color: #575757;
+  background-color: #fff;
 }
 
 h1 {
@@ -20,6 +20,11 @@ h1 {
 h3 {
   font-size: 42px;
   line-height: 1.19;
+}
+
+h2 {
+  font-size: 60px;
+  line-height: 1.5;
 }
 
 h4 {
@@ -355,4 +360,112 @@ a {
 .video-card__desc {
   grid-area: desc;
   opacity: 0.7;
+}
+
+.photo-gallery {
+  padding: 177px 0 229px;
+}
+.photo-gallery__сontainer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.photo-gallery__title {
+  color: #000;
+  max-width: 614px;
+  margin-bottom: 42px;
+  text-align: center;
+}
+.photo-gallery__desc {
+  color: #6f7787;
+  max-width: 511px;
+  margin-bottom: 71px;
+  text-align: center;
+}
+
+.photo-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 370px));
+  grid-template-rows: minmax(auto, 210px) repeat(2, minmax(auto, 130px)) minmax(auto, 210px);
+  gap: 30px;
+  grid-template-areas: "img1 img2 img3" "img1 img5 img3" "img1 img5 img6" "img4 img5 img6";
+}
+.photo-gallery-grid__img-1 {
+  grid-area: img1;
+}
+.photo-gallery-grid__img-2 {
+  grid-area: img2;
+}
+.photo-gallery-grid__img-3 {
+  grid-area: img3;
+}
+.photo-gallery-grid__img-4 {
+  grid-area: img4;
+}
+.photo-gallery-grid__img-5 {
+  grid-area: img5;
+}
+.photo-gallery-grid__img-6 {
+  grid-area: img6;
+}
+
+.footer {
+  background-color: #010a20;
+}
+.footer__сontainer {
+  max-width: 1854px;
+  padding: 38px 85px 47px;
+  position: relative;
+  display: flex;
+  align-items: end;
+}
+.footer__logo {
+  margin-right: 124px;
+}
+.footer__copyright {
+  line-height: 1.55;
+  letter-spacing: 0.5px;
+}
+
+.scroll-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 104px;
+  height: 104px;
+  background-color: #dd2242;
+  border-radius: 50%;
+  position: absolute;
+  right: 35px;
+  top: -52px;
+}
+.scroll-up span {
+  display: inline-block;
+  border: solid rgb(255, 255, 255);
+  border-width: 0 6px 6px 0;
+  margin-bottom: -14px;
+  width: 28px;
+  height: 28px;
+  transform: rotate(-135deg);
+}
+
+.footer-nav {
+  margin-right: auto;
+}
+.footer-nav__list {
+  display: flex;
+}
+.footer-nav__item + .footer-nav__item {
+  margin-left: 35px;
+}
+
+.footer-soc {
+  display: flex;
+  align-items: center;
+  margin-right: 55px;
+}
+.footer-soc__img + .footer-soc__img {
+  margin-left: 23px;
 }

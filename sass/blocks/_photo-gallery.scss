@@ -1,0 +1,56 @@
+@mixin map-indent {
+    text-align: center;
+}
+
+.photo-gallery {
+    padding: 177px 0 229px;
+    &__сontainer {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        color: #000;
+        max-width: 614px;
+        margin-bottom: 42px;
+        @include map-indent;
+    }
+    &__desc {
+        color: #6f7787;
+        max-width: 511px;
+        margin-bottom: 71px;
+        @include map-indent;
+    }
+}
+
+.photo-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 370px));
+    grid-template-rows: minmax(auto, 210px) repeat(2, minmax(auto, 130px)) minmax(auto, 210px);
+    gap: 30px;
+    grid-template-areas:
+        "img1 img2 img3"
+        "img1 img5 img3"
+        "img1 img5 img6"
+        "img4 img5 img6";
+    &__img-1 {
+        grid-area: img1;
+    }
+    &__img-2 {
+        grid-area: img2;
+    }
+    &__img-3 {
+        grid-area: img3;
+    }
+    &__img-4 {
+        grid-area: img4;
+    }
+    &__img-5 {
+        grid-area: img5;
+    }
+    &__img-6 {
+        grid-area: img6;
+    }
+}
