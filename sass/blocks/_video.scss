@@ -1,14 +1,10 @@
 .video {
     background-image: url("../img/Video/background.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
     background-size: cover;
 
     display: grid;
     grid-template-columns: repeat(2, minmax(auto, 642px));
-    grid-template-rows: repeat(3, auto);
-    grid-column-gap: 75px;
-    grid-row-gap: 115px;
+    gap: 115px 75px;
     grid-template-areas:
         "title title"
         "video video";
@@ -27,8 +23,6 @@
 }
 .video-card {
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
     grid-template-areas:
         "video title"
         "video desc";

@@ -1,18 +1,13 @@
 .hero {
     background-image: url("../img/Hero/hero-background.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
     background-size: cover;
 
-    padding-left: 32px;
-    max-width: 1915px;
-    margin: 0 auto;
+    padding-left: 30px;
     height: 100vh;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-
     display: grid;
-    grid-template-columns: minmax(auto, 277px) auto minmax(auto, 417px);
+    grid-template-columns: minmax(auto, 277px) minmax(auto, 1225px) minmax(auto, 417px);
     grid-template-rows: minmax(auto, 105px) auto minmax(auto, 254px);
     grid-template-areas:
         "logo nav buttons"
@@ -46,6 +41,7 @@
     }
     &__video {
         grid-area: video;
+        align-self: end;
     }
 }
 
@@ -55,9 +51,7 @@
         text-transform: uppercase;
     }
     &__item {
-        & + & {
-            margin-left: 62px;
-        }
+        margin-left: 62px;
     }
 }
 .header-buttons {
@@ -73,17 +67,14 @@
     flex-direction: column-reverse;
     align-items: center;
     margin-right: auto;
-    height: 100%;
     &__num {
-        text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
-        font-size: 16px;
         margin-top: 20px;
         writing-mode: vertical-rl;
         transform: rotate(-180deg);
     }
     &__bar {
         display: inline-block;
-        background: linear-gradient(0deg, #fff 0%, #fff 100%), #fff;
+        background-color: #fff;
         width: 2px;
         height: 100%;
         position: relative;
@@ -115,8 +106,6 @@
         justify-content: space-between;
     }
     &__item {
-        text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
-        font-size: 16px;
         writing-mode: vertical-rl;
         transform: rotate(-180deg);
     }
@@ -125,10 +114,9 @@
 .hero-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 90%;
     &__item {
         background-color: rgba(0, 0, 0, 0.6);
-        padding: 41px 71px;
+        padding: 40px 70px;
     }
     &__num {
         display: block;

@@ -5,15 +5,11 @@
 
 .map {
     background-image: url("../img/Map/background.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
     background-size: cover;
     padding: 250px 0;
     &__сontainer {
-        margin: 0 auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
     &__title {

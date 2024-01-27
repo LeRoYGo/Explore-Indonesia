@@ -1,34 +1,25 @@
-@mixin map-indent {
-    text-align: center;
-}
-
 .photo-gallery {
-    padding: 177px 0 229px;
+    padding: 177px 30px 229px;
     &__сontainer {
-        margin: 0 auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
     &__title {
         color: #000;
-        max-width: 614px;
         margin-bottom: 42px;
-        @include map-indent;
+        text-align: center;
     }
     &__desc {
         color: #6f7787;
         max-width: 511px;
         margin-bottom: 71px;
-        @include map-indent;
+        text-align: center;
     }
 }
 
 .photo-gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(auto, 370px));
-    grid-template-rows: minmax(auto, 210px) repeat(2, minmax(auto, 130px)) minmax(auto, 210px);
     gap: 30px;
     grid-template-areas:
         "img1 img2 img3"
@@ -52,5 +43,26 @@
     }
     &__img-6 {
         grid-area: img6;
+    }
+}
+
+@media (max-width: 1229px) {
+    .photo-gallery {
+        padding: 88px 30px 114px;
+    }
+    .photo-gallery-grid {
+        gap: 13px;
+        grid-template-areas:
+            "img1 img2"
+            "img1 img5"
+            "img1 img5"
+            "img4 img5"
+            "img3 img6";
+    }
+}
+
+@media (max-width: 1229px) {
+    .photo-gallery {
+        padding: 32px 30px 40px;
     }
 }
