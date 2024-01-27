@@ -1,6 +1,7 @@
 .explore-numbers {
     background-image: url("../img/Explore-Numbers/background.jpg");
     background-size: cover;
+    background-position: bottom;
     padding-top: 127px;
     &__title {
         color: #010a20;
@@ -10,9 +11,10 @@
     }
     &__slider {
         height: 310px;
-        width: 80%;
-        background-color: aqua;
+        max-width: 1433px;
         margin: 0 auto 890px;
+        padding: 0 7px;
+        background-color: aqua;
     }
 }
 
@@ -50,5 +52,40 @@
     &__desc {
         color: #e0e0e0;
         text-align: center;
+    }
+}
+
+@media (max-width: 730px) {
+    .explore-numbers-content-list {
+        grid-template-columns: auto;
+        gap: 80px 30px;
+        padding: 69px 30px;
+        h3 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 16px;
+        }
+        &__body {
+            h3 {
+                margin-bottom: 50px;
+            }
+        }
+        &__title {
+        }
+        &__desc {
+        }
+    }
+    .explore-numbers {
+        h3 {
+            font-size: 40px;
+        }
+        padding-top: 49px;
+        &__title {
+            color: #010a20;
+            text-align: center;
+            font-size: 60px;
+            margin-bottom: 44px;
+        }
     }
 }

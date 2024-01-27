@@ -262,6 +262,7 @@ a {
 .explore-numbers {
   background-image: url("../img/Explore-Numbers/background.jpg");
   background-size: cover;
+  background-position: bottom;
   padding-top: 127px;
 }
 .explore-numbers__title {
@@ -272,9 +273,10 @@ a {
 }
 .explore-numbers__slider {
   height: 310px;
-  width: 80%;
-  background-color: aqua;
+  max-width: 1433px;
   margin: 0 auto 890px;
+  padding: 0 7px;
+  background-color: aqua;
 }
 
 .explore-numbers-content-list {
@@ -314,6 +316,34 @@ a {
   text-align: center;
 }
 
+@media (max-width: 730px) {
+  .explore-numbers-content-list {
+    grid-template-columns: auto;
+    gap: 80px 30px;
+    padding: 69px 30px;
+  }
+  .explore-numbers-content-list h3 {
+    font-size: 40px;
+  }
+  .explore-numbers-content-list p {
+    font-size: 16px;
+  }
+  .explore-numbers-content-list__body h3 {
+    margin-bottom: 50px;
+  }
+  .explore-numbers {
+    padding-top: 49px;
+  }
+  .explore-numbers h3 {
+    font-size: 40px;
+  }
+  .explore-numbers__title {
+    color: #010a20;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 44px;
+  }
+}
 .map {
   background-image: url("../img/Map/background.jpg");
   background-size: cover;
@@ -631,7 +661,6 @@ a {
   }
 }
 .hero,
-.explore-numbers,
 .video,
 .getting {
   display: none;
