@@ -6,7 +6,7 @@
 .map {
     background-image: url("../img/Map/background.jpg");
     background-size: cover;
-    padding: 250px 0;
+    padding: 250px 30px;
     &__сontainer {
         display: flex;
         flex-direction: column;
@@ -21,5 +21,22 @@
         color: #6f7787;
         max-width: 470px;
         @include map-indent;
+    }
+}
+
+@media (max-width: 612px) {
+    .map {
+        padding: 170px 30px 116px;
+        h3 {
+            font-size: 40px;
+        }
+        p {
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+        }
+        a {
+            align-self: stretch;
+            text-align: center;
+        }
     }
 }
