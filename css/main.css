@@ -17,14 +17,14 @@ h1 {
   text-transform: uppercase;
 }
 
-h3 {
-  font-size: 42px;
-  line-height: 1.19;
-}
-
 h2 {
   font-size: 60px;
   line-height: 1.5;
+}
+
+h3 {
+  font-size: 42px;
+  line-height: 1.19;
 }
 
 h4 {
@@ -409,6 +409,64 @@ a {
 }
 .photo-gallery-grid__img-6 {
   grid-area: img6;
+}
+
+.getting {
+  background-color: #dce8f2;
+  color: #010a20;
+  counter-reset: my-counter;
+}
+.getting__сontainer {
+  max-width: 1200px;
+  padding: 117px 30px;
+  margin: 0 auto;
+}
+.getting__сontainer a {
+  margin-left: 102px;
+}
+.getting__title {
+  margin-bottom: 44px;
+  margin-left: -31px;
+}
+
+.getting-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 102px;
+  padding-bottom: 80px;
+  border-left: 3px solid rgba(21, 20, 57, 0.2);
+  position: relative;
+  counter-increment: my-counter;
+}
+.getting-card:last-child {
+  border-left: none;
+  padding-bottom: 10px;
+}
+.getting-card__title {
+  margin-top: 14px;
+  margin-bottom: 28px;
+}
+.getting-card__desc {
+  color: rgba(21, 20, 57, 0.4);
+  padding-bottom: 18px;
+}
+.getting-card::before {
+  content: counter(my-counter);
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  top: 0;
+  left: -31px;
+  color: #fff;
+  background-color: #dd2242;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 26.409px;
+  font-weight: 500;
+  padding-top: 12px;
 }
 
 .footer {
