@@ -331,7 +331,7 @@ a {
 }
 
 .photo-gallery {
-  padding: 177px 0 229px;
+  padding: 177px 30px 229px;
 }
 .photo-gallery__сontainer {
   display: flex;
@@ -341,6 +341,7 @@ a {
 .photo-gallery__title {
   color: #000;
   margin-bottom: 42px;
+  text-align: center;
 }
 .photo-gallery__desc {
   color: #6f7787;
@@ -373,6 +374,20 @@ a {
   grid-area: img6;
 }
 
+@media (max-width: 1229px) {
+  .photo-gallery {
+    padding: 88px 30px 114px;
+  }
+  .photo-gallery-grid {
+    gap: 13px;
+    grid-template-areas: "img1 img2" "img1 img5" "img1 img5" "img4 img5" "img3 img6";
+  }
+}
+@media (max-width: 1229px) {
+  .photo-gallery {
+    padding: 32px 30px 40px;
+  }
+}
 .getting {
   background-color: #dce8f2;
   color: #010a20;
@@ -544,7 +559,6 @@ a {
 .explore-numbers,
 .map,
 .video,
-.photo-gallery,
 .getting {
   display: none;
 }
