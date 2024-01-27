@@ -1,20 +1,18 @@
 .explore-numbers {
     background-image: url("../img/Explore-Numbers/background.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
     background-size: cover;
+    padding-top: 127px;
     &__title {
         color: #010a20;
         text-align: center;
         font-size: 60px;
-        line-height: 1.5;
-        padding: 127px 0 44px;
+        margin-bottom: 44px;
     }
     &__slider {
         height: 310px;
         width: 80%;
         background-color: aqua;
-        margin: 0 auto;
+        margin: 0 auto 890px;
     }
 }
 
@@ -24,17 +22,13 @@
     justify-items: center;
     justify-content: center;
     gap: 50px 30px;
-    padding: 200px 15px;
-    margin-top: 890px;
-
-    opacity: 0.9;
-    background: #020c21;
+    padding: 200px 30px;
+    background: rgba(2, 12, 34, 0.9);
     &__body {
         grid-column: 1/-1;
     }
     &__title {
         font-size: 60px;
-        line-height: 1.5;
         text-align: center;
     }
     &__desc {
@@ -47,12 +41,10 @@
 .explore-numbers-content-card {
     display: flex;
     flex-direction: column;
+    align-items: center;
     &__number {
         color: #dd2242;
-        text-align: center;
         font-size: 42px;
-        line-height: 1.16;
-        letter-spacing: 0.386px;
         margin-bottom: 14px;
     }
     &__desc {
