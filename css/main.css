@@ -554,11 +554,13 @@ a {
     transform: translate(50%);
   }
 }
+/*
 .hero,
 .articles,
 .explore-numbers,
 .map,
 .video,
 .getting {
-  display: none;
+    display: none;
 }
+*/
