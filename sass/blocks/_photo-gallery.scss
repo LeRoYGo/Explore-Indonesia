@@ -49,6 +49,20 @@
 @media (max-width: 1229px) {
     .photo-gallery {
         padding: 88px 30px 114px;
+        h2 {
+            font-size: 40px;
+            line-height: 1.15;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        &__title {
+            margin-bottom: 20px;
+        }
+        &__desc {
+            margin-bottom: 35px;
+        }
     }
     .photo-gallery-grid {
         gap: 13px;

@@ -1,9 +1,8 @@
 .hero {
     background-image: url("../img/Hero/hero-background.jpg");
     background-size: cover;
-
+    min-height: 100vh;
     padding-left: 30px;
-    height: 100vh;
     justify-content: center;
     align-items: center;
     display: grid;
@@ -42,6 +41,7 @@
     &__video {
         grid-area: video;
         align-self: end;
+        background-color: rgba(0, 0, 0, 0.6);
     }
 }
 
@@ -125,5 +125,76 @@
     }
     &__desc {
         color: #939393;
+    }
+}
+
+@media (max-width: 1643px) {
+    .hero-card {
+        &__item {
+            padding: 30px 30px 15px;
+        }
+        &__desc {
+            font-size: 16px;
+        }
+    }
+    .hero-social {
+        padding: 25px 30px;
+    }
+}
+
+@media (max-width: 1490px) {
+    .hero-card {
+        &__item {
+            padding: 15px;
+        }
+        &__num {
+            font-size: 16px;
+            font-weight: 900;
+            margin-bottom: 4px;
+        }
+    }
+}
+@media (max-width: 1300px) {
+    .hero {
+        padding: 40px 30px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo buttons"
+            "сontent сontent"
+            "card card"
+            "video video";
+        &__nav {
+            display: none;
+        }
+        &__buttons {
+            justify-self: end;
+        }
+        &__scroll {
+            display: none;
+        }
+        &__сontent {
+            margin: 60px 0;
+            h1 {
+                font-size: 58px;
+            }
+        }
+        &__social {
+            display: none;
+        }
+        &__video {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding-top: 30px;
+            justify-self: stretch;
+            align-self: stretch;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .hero-card {
+        grid-template-columns: auto;
+        &__desc {
+            max-width: 215px;
+        }
     }
 }
