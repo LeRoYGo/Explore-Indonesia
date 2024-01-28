@@ -498,7 +498,9 @@ a {
   background-color: #dce8f2;
   color: #010a20;
   counter-reset: my-counter;
-  padding: 117px 30px;
+  padding: 117px 0;
+  padding-left: 60px;
+  padding-right: 30px;
 }
 .getting__сontainer {
   max-width: 1200px;
@@ -526,12 +528,17 @@ a {
   padding-bottom: 10px;
 }
 .getting-card__title {
-  margin-top: 14px;
-  margin-bottom: 28px;
+  margin: 26px 0 28px;
 }
 .getting-card__desc {
   color: rgba(21, 20, 57, 0.4);
   padding-bottom: 18px;
+}
+.getting-card__button {
+  color: #dd2242;
+  font-size: 16px;
+  line-height: 1.5;
+  display: none;
 }
 .getting-card::before {
   content: counter(my-counter);
@@ -547,6 +554,41 @@ a {
   padding-top: 12px;
 }
 
+@media (max-width: 612px) {
+  .getting {
+    padding: 30px 30px 80px;
+  }
+  .getting__сontainer a {
+    display: none;
+  }
+  .getting__list {
+    padding-top: 80px;
+  }
+  .getting__title {
+    margin: 0;
+    text-align: center;
+  }
+  .getting-card {
+    padding-left: 0;
+    border-left: none;
+    padding-top: 26px;
+  }
+  .getting-card__title {
+    text-align: center;
+  }
+  .getting-card__desc {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .getting-card__button {
+    display: block;
+  }
+  .getting-card::before {
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+}
 .footer {
   background-color: #010a20;
 }
@@ -661,7 +703,6 @@ a {
   }
 }
 .hero,
-.video,
-.getting {
+.video {
   display: none;
 }

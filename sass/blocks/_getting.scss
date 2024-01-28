@@ -2,7 +2,9 @@
     background-color: #dce8f2;
     color: #010a20;
     counter-reset: my-counter;
-    padding: 117px 30px;
+    padding: 117px 0;
+    padding-left: 60px;
+    padding-right: 30px;
     &__сontainer {
         max-width: 1200px;
         margin: 0 auto;
@@ -28,12 +30,17 @@
         padding-bottom: 10px;
     }
     &__title {
-        margin-top: 14px;
-        margin-bottom: 28px;
+        margin: 26px 0 28px;
     }
     &__desc {
         color: rgba(21, 20, 57, 0.4);
         padding-bottom: 18px;
+    }
+    &__button {
+        color: #dd2242;
+        font-size: 16px;
+        line-height: 1.5;
+        display: none;
     }
     &::before {
         content: counter(my-counter);
@@ -47,5 +54,45 @@
         text-align: center;
         font-size: 26px;
         padding-top: 12px;
+    }
+}
+
+@media (max-width: 612px) {
+    .getting {
+        padding: 30px 30px 80px;
+        &__сontainer {
+            a {
+                display: none;
+            }
+        }
+        &__list {
+            padding-top: 80px;
+        }
+        &__title {
+            margin: 0;
+            text-align: center;
+        }
+    }
+
+    .getting-card {
+        padding-left: 0;
+        border-left: none;
+        padding-top: 26px;
+
+        &__title {
+            text-align: center;
+        }
+        &__desc {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &__button {
+            display: block;
+        }
+        &::before {
+            left: 50%;
+            transform: translate(-50%, -100%);
+        }
     }
 }
