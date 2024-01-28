@@ -164,8 +164,6 @@
             "сontent сontent"
             "card card"
             "video video";
-        &__logo {
-        }
         &__nav {
             display: none;
         }
@@ -184,8 +182,6 @@
         &__social {
             display: none;
         }
-        &__card {
-        }
         &__video {
             background-color: rgba(0, 0, 0, 0.6);
             padding-top: 30px;
@@ -197,10 +193,6 @@
 @media (max-width: 600px) {
     .hero-card {
         grid-template-columns: auto;
-        &__item {
-        }
-        &__num {
-        }
         &__desc {
             max-width: 215px;
         }
