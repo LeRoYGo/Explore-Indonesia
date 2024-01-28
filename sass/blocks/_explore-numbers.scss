@@ -10,11 +10,8 @@
         margin-bottom: 44px;
     }
     &__swiper {
-        height: 310px;
         max-width: 1433px;
         margin: 0 auto 890px;
-        padding: 0 7px;
-        position: relative;
     }
 }
 
@@ -62,24 +59,15 @@
 
 .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    font-size: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-@media (max-width: 760px) {
-    .swiper-button-next {
-        right: 20px;
-        transform: rotate(90deg);
-    }
-
-    .swiper-button-prev {
-        left: 20px;
-        transform: rotate(90deg);
-    }
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: #000;
 }
-
 @media (max-width: 730px) {
     .explore-numbers-content-list {
         grid-template-columns: auto;
