@@ -11,7 +11,7 @@
 
     justify-items: center;
     justify-content: center;
-    padding: 141px 0 255px;
+    padding: 141px 30px 255px;
     &__title {
         grid-area: title;
         max-width: 1056px;
@@ -39,5 +39,55 @@
     &__desc {
         grid-area: desc;
         opacity: 0.7;
+    }
+}
+
+@media (max-width: 1244px) {
+    .video {
+        gap: 40px 20px;
+        padding: 80px 30px 40px;
+        h2 {
+            font-size: 40px;
+            line-height: 1.15;
+        }
+    }
+    .video-card {
+        justify-items: center;
+        grid-template-areas:
+            "video"
+            "title"
+            "desc";
+        grid-row-gap: 30px;
+        &__video {
+        }
+        &__title {
+        }
+        &__desc {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 642px) {
+    .video {
+        grid-template-columns: auto;
+        grid-template-areas:
+            "title"
+            "video";
+        &__title {
+        }
+        &__video {
+        }
+    }
+    .video-card {
+        &__video {
+        }
+        &__title {
+            font-size: 22px;
+        }
+        &__desc {
+            text-align: center;
+            font-size: 16px;
+        }
     }
 }
