@@ -9,12 +9,12 @@
         font-size: 60px;
         margin-bottom: 44px;
     }
-    &__slider {
+    &__swiper {
         height: 310px;
         max-width: 1433px;
         margin: 0 auto 890px;
         padding: 0 7px;
-        background-color: aqua;
+        position: relative;
     }
 }
 
@@ -55,6 +55,31 @@
     }
 }
 
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 760px) {
+    .swiper-button-next {
+        right: 20px;
+        transform: rotate(90deg);
+    }
+
+    .swiper-button-prev {
+        left: 20px;
+        transform: rotate(90deg);
+    }
+}
+
 @media (max-width: 730px) {
     .explore-numbers-content-list {
         grid-template-columns: auto;
@@ -70,10 +95,6 @@
             h3 {
                 margin-bottom: 50px;
             }
-        }
-        &__title {
-        }
-        &__desc {
         }
     }
     .explore-numbers {

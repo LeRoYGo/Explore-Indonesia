@@ -46,6 +46,8 @@ a {
   font-size: 20px;
   background-color: #dd2242;
   border-radius: 211px;
+  transition: background-color 0.3s ease-in-out;
+  transition: color 0.2s;
 }
 .button_hero {
   padding: 26px 64px;
@@ -55,6 +57,10 @@ a {
 }
 .button_map {
   padding: 18px 56px;
+}
+.button:hover {
+  background-color: #cfcd54;
+  color: #000;
 }
 
 .hero {
@@ -158,6 +164,29 @@ a {
 .hero-social__item {
   writing-mode: vertical-rl;
   transform: rotate(-180deg);
+}
+
+.nav__item,
+.hero-social__item {
+  position: relative;
+}
+.nav__item::before,
+.hero-social__item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  bottom: -5px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.4s ease-in-out;
+}
+.nav__item:hover::before,
+.hero-social__item:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .hero-card {
@@ -333,12 +362,12 @@ a {
   font-size: 60px;
   margin-bottom: 44px;
 }
-.explore-numbers__slider {
+.explore-numbers__swiper {
   height: 310px;
   max-width: 1433px;
   margin: 0 auto 890px;
   padding: 0 7px;
-  background-color: aqua;
+  position: relative;
 }
 
 .explore-numbers-content-list {
@@ -378,6 +407,29 @@ a {
   text-align: center;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 760px) {
+  .swiper-button-next {
+    right: 20px;
+    transform: rotate(90deg);
+  }
+  .swiper-button-prev {
+    left: 20px;
+    transform: rotate(90deg);
+  }
+}
 @media (max-width: 730px) {
   .explore-numbers-content-list {
     grid-template-columns: auto;
@@ -730,6 +782,23 @@ a {
 }
 .footer-nav__item {
   margin-right: 35px;
+  position: relative;
+}
+.footer-nav__item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  bottom: -5px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.4s ease-in-out;
+}
+.footer-nav__item:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .footer-soc {

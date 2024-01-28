@@ -58,10 +58,6 @@
             "title"
             "desc";
         grid-row-gap: 30px;
-        &__video {
-        }
-        &__title {
-        }
         &__desc {
             text-align: center;
         }
@@ -74,14 +70,8 @@
         grid-template-areas:
             "title"
             "video";
-        &__title {
-        }
-        &__video {
-        }
     }
     .video-card {
-        &__video {
-        }
         &__title {
             font-size: 22px;
         }
