@@ -45,6 +45,8 @@ a {
     font-size: 20px;
     background-color: $mainRed;
     border-radius: 211px;
+    transition: background-color 0.3s ease-in-out;
+    transition: color 0.2s;
     &_hero {
         padding: 26px 64px;
     }
@@ -53,5 +55,10 @@ a {
     }
     &_map {
         padding: 18px 56px;
+    }
+
+    &:hover {
+        background-color: #cfcd54;
+        color: #000;
     }
 }
